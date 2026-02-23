@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 import config
 import random
 
-from config import START_IMAGES, OWNER_ID
+from config import START_IMAGES, OWNER
 
 from PURVIBOTS import app
 
@@ -18,7 +18,7 @@ async def start(client: Client, message):
     buttons = InlineKeyboardMarkup([
         [InlineKeyboardButton("ᴀʙᴏᴜᴛ ʙᴏᴛ", callback_data="about")],
         [
-            InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER_ID),
+            InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER),
             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/ChatHouseGc")
         ]
     ])
@@ -51,7 +51,7 @@ async def back_to_start(client: Client, query: CallbackQuery):
     buttons = InlineKeyboardMarkup([
         [InlineKeyboardButton("ᴀʙᴏᴜᴛ ʙᴏᴛ", callback_data="about")],
         [
-            InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER_ID),
+            InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER),
             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/ChatHouseGc")
         ]
     ])
