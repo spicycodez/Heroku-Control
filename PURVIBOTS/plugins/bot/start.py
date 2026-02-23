@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 import config
 import random
 
-from config import START_IMAGES, OWNER
+from config import START_IMAGES, OWNER_ID
 
 from PURVIBOTS import app
 
