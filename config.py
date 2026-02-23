@@ -16,11 +16,11 @@ BOT_TOKEN = getenv("BOT_TOKEN", None)
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
 
-OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "7603581459 924235973").split())
-)
+#OWNER_ID = list(
+ #   map(int, getenv("OWNER_ID", "7603581459 924235973").split())
+#)
 
-OWNER = 8143754205
+OWNER_ID = 7603581459
 
 START_IMAGES = [
     "https://graph.org/file/eaa3a2602e43844a488a5.jpg",
