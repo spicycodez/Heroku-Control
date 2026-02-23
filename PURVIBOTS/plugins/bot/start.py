@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 import config
 import random
 
-from config import START_IMAGES, OWNER
+from config import START_IMAGES, OWNER_ID
 
 from PURVIBOTS import app
 
@@ -18,8 +18,8 @@ async def start(client: Client, message):
     buttons = InlineKeyboardMarkup([
         [InlineKeyboardButton("ᴀʙᴏᴜᴛ ʙᴏᴛ", callback_data="about")],
         [
-            InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER),
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/purvi_support")
+            InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER_ID),
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/ChatHouseGc")
         ]
     ])
 
@@ -33,8 +33,8 @@ async def start(client: Client, message):
 async def about_callback(client: Client, query: CallbackQuery):
     buttons = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/purvi_support"),
-            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/PURVI_UPDATES")
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/ChatHouseGc"),
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/SpicyxNetwork")
         ],
         [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="back_to_start")]
     ])
@@ -51,8 +51,8 @@ async def back_to_start(client: Client, query: CallbackQuery):
     buttons = InlineKeyboardMarkup([
         [InlineKeyboardButton("ᴀʙᴏᴜᴛ ʙᴏᴛ", callback_data="about")],
         [
-            InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER),
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/purvi_support")
+            InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER_ID),
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/ChatHouseGc")
         ]
     ])
 
