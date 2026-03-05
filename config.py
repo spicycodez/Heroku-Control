@@ -20,7 +20,7 @@ OWNER_ID = list(
     map(int, getenv("OWNER_ID", "7603581459").split())
 )
 
-OWNER_ID = 7603581459
+OWNER = 7603581459
 
 START_IMAGES = [
     "https://graph.org/file/eaa3a2602e43844a488a5.jpg",
