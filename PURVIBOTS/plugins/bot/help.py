@@ -12,7 +12,7 @@ async def help_command(client: Client, message):
     random_image = random.choice(START_IMAGES)  
 
     buttons = InlineKeyboardMarkup([
-        [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/purvi_support"),
+        [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/ChatHouseGc"),
         InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close_help")]
     ])
 
